@@ -11,9 +11,10 @@
     <AssemblyName>InformationManagement</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
-    <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -79,10 +80,53 @@
     <Compile Include="Admin\AdminDashboard.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Admin\Dashboard.Designer.vb">
+      <DependentUpon>Dashboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Dashboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\MenuItems.Designer.vb">
+      <DependentUpon>MenuItems.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\MenuItems.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Orders.Designer.vb">
+      <DependentUpon>Orders.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Orders.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Payroll.Designer.vb">
+      <DependentUpon>Payroll.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Payroll.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Reports.Designer.vb">
+      <DependentUpon>Reports.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Reports.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Reservations.Designer.vb">
+      <DependentUpon>Reservations.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Reservations.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\UsersAccounts.Designer.vb">
+      <DependentUpon>UsersAccounts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UsersAccounts.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="My Project\Resources.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -98,6 +142,27 @@
   <ItemGroup>
     <EmbeddedResource Include="Admin\AdminDashboard.resx">
       <DependentUpon>AdminDashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Dashboard.resx">
+      <DependentUpon>Dashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\MenuItems.resx">
+      <DependentUpon>MenuItems.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Orders.resx">
+      <DependentUpon>Orders.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Payroll.resx">
+      <DependentUpon>Payroll.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Reports.resx">
+      <DependentUpon>Reports.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Reservations.resx">
+      <DependentUpon>Reservations.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\UsersAccounts.resx">
+      <DependentUpon>UsersAccounts.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -121,6 +186,9 @@
   <ItemGroup>
     <Folder Include="Staff\" />
     <Folder Include="User\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dashboard %281%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
