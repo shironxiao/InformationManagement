@@ -27,11 +27,4 @@
     Private Sub Adminlogin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
-
-    Private Sub adminlog_Click(sender As Object, e As EventArgs) Handles adminlog.Click
-
-        AdminDashboard.Show()
-
-        Me.Hide()
-    End Sub
 End Class
