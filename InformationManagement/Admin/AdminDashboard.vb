@@ -1,4 +1,5 @@
 ﻿Public Class AdminDashboard
+
     Private Sub Panel2_Paint(sender As Object, e As PaintEventArgs) Handles Panel2.Paint
 
     End Sub
@@ -141,6 +142,16 @@
         MakeRoundedButton(btnOrders, 15)
         MakeRoundedButton(btnPayroll, 15)
         MakeRoundedButton(btnReports, 15)
+        HighlightButton(btnDashboard)
+        With Dashboard
+            .TopLevel = False
+            .FormBorderStyle = FormBorderStyle.None
+            .Dock = DockStyle.Fill
+            Panel1.Controls.Clear()
+            Panel1.Controls.Add(Dashboard)
+            .BringToFront()
+            .Show()
+        End With
     End Sub
-    
+
 End Class
