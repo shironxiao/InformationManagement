@@ -254,6 +254,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Admin\FormLogin\" />
     <Folder Include="Staff\" />
     <Folder Include="User\" />
   </ItemGroup>
